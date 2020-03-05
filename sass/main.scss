@@ -1,0 +1,16 @@
+/*
+BEM - Block Element Modifier
+*/
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+/*base/base == no need to write _base.scss*/
+@import 'base/base';
+@import 'base/animations';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/button';
+@import 'layout/header';
+@import 'base/typography';
+@import 'pages/home';

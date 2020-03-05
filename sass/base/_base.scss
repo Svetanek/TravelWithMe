@@ -1,0 +1,16 @@
+/*best practice is to use inheritance for top selector as for box-sizing here, so that it will be easier to change whenever is needed. Also need to include pseudo elements as if we leave just * {} pseudo elements won't be included*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/*default browser is 16px ==> 10px/16px = 0.625*/
+html {
+  //defines what 1rem is
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+}
