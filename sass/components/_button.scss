@@ -45,6 +45,13 @@
       background-color: $color-white;
     }
   }
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+    &::after {
+      background-color: $color-white;
+    }
+  }
   /* 0.75 animation delay
 animation-fil... backwards apply zero style as an initial point
 */
