@@ -14,11 +14,11 @@
     border: none;
     cursor: pointer;
   }
-  /* box-shadow: 2rem blur */
+  //box-shadow: 2rem blur
   &:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.5);
-    /* opacity 0 makes all transition dissapear at the end*/
+    //opacity 0 makes all transition dissapear at the end
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;
@@ -30,7 +30,8 @@
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
-  /*in order for pseudo element (after) to appear on a page content is always necessary, even empty*/
+
+  //in order for pseudo element :after to appear on a page content is always necessary, even empty
 
   &::after {
     content: '';
@@ -58,9 +59,7 @@
       background-color: $color-white;
     }
   }
-  /* 0.75 animation delay
-animation-fil... backwards apply zero style as an initial point
-*/
+  //0.75 animation delay animation-fil... backwards apply zero style as an initial point
   &--animated {
     animation: moveInFromBottom 1s ease-out 0.75;
     animation-fill-mode: backwards;
